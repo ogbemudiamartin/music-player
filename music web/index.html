@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+</head>
+<body>
+  <img src="" class="head">
+    <header>
+        <div class="container">
+            <div class="music-container">
+                <img src="./img/img1.jpg" alt="" id="songImg" class="img">
+                  <!--contents-->
+                <div class="content">
+                    <div class="title" id="title">enoila noal</div>
+                       <div id="sub-title">snow flake</div>
+                </div>
+               <!--navigations-->
+               <div class="navigation">
+                <i class="fa-solid fa-rotate" onchange="repeatSong()"
+                  id="sync"style="padding-right:2rem; cursor: pointer;"></i>
+                <button id="prev" class="action-btn">
+                   <i class="fas fa-backward-step"></i>
+                </button>
+                <button id="play" class="action-btn-big">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button id="next" class="action-btn">
+                    <i class="fas fa-forward-step"></i>
+                </button>
+                <i class="fa-solid fa-volume-low" 
+                onclick="volume_sound()"
+                 id="volume" style="padding-left:2rem; cursor: pointer"></i>
+             </div>
+             
+          <div class="progress-container">
+            <div class="current_time"></div>
+              <input type="range" class="progress"
+              onchange="seekto()">
+              <div class="endTime">2:30</div>
+          </div>
+          <audio src="./music/Fivio Foreign, Kanye West, Alicia Keys - City of Gods (Official Video).mp3" ></audio>
+
+            </div>
+
+              <!--playlist-->
+              <div class="music2-container">
+                <nav>
+                    <div class="logo">VOCATONE</div>
+                    <div class="icons">
+                         <i>EN</i>
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-person"></i>
+                        <i class="fas fa-bars"></i><!--menu icon-->
+                    </div>
+                </nav>
+<!--         play list menu            -->
+                <div class="playlist-menu ">
+                  <div class="list-group">
+                    <h3>Demon - slayer</h3>
+                    <i class="fas fa-play"></i>
+                  </div>
+
+                  <div class="list-group">
+                    <h3>Dont-Wake_me_up</h3>
+                    <i class="fas fa-play"></i>
+                  </div>
+
+                  <div class="list-group">
+                    <h3>Fivio Foreign</h3>
+                    <i class="fas fa-play"></i>
+                  </div>
+
+                  <div class="list-group">
+                    <h3>flora cash - You are Somebody Else</h3>
+                    <i class="fas fa-play"></i>
+                  </div>
+
+                  <div class="list-group">
+                    <h3>Future - WAIT FOR U (Official) ft. Drake, Tems</h3>
+                    <i class="fas fa-play"></i>
+                  </div>
+                  <div class="list-group">
+                    <h3>Future - WAIT FOR U (Official) ft. Drake, Tems</h3>
+                    <i class="fas fa-play"></i>
+                  </div>
+                
+                 
+                </div>
+<!--           play list menu ends         -->
+
+<!--          details               -->
+                <div class="details">
+                    <h1>Play Your<br>Beloved Music</h1>
+                    <p>Selected music from various gennes, artist and composers.</p>
+                    <p> Play now completely line and convinient .   </p>
+                    <button id="play" class="btn-Play">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+<!--          details   ends            -->
+
+                <h4 class="select_playlist">Choose a Playlist</h4>
+
+<!--          playlist start               -->
+
+                <div class="playlist">
+                  <div class="list">
+                    <img src="./img/Fivio Foreign.jpg" alt="">
+                    <div class="name">Fivio Foreign</div>
+                  </div>
+
+                  <div class="list">
+                    <img src="./img/Demon__slayer.jpg" alt="">
+                    <div class="name">demon</div>
+                  </div>
+
+                  <div class="list">
+                    <img src="./img/img3.png" alt="">
+                    <div class="name">ghost</div>
+                  </div>
+                </div>
+<!--          playlist ends               -->
+
+              </div>
+        </div>
+    </header>
+
+
+<script src="app.js"></script>
+</body>
+</html>
